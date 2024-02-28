@@ -1,0 +1,39 @@
+/*
+ID Classes, atributos e pseudo-classes  Elementos e pseudo-elementos
+*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid .col {
+    height: 300px;
+    float: left;
+    padding: 15px;
+}
+
+.grid .col-content {
+    width: 100%;
+    height: 100%;
+    background: red;
+}
+
+@media all and (max-width: 568px) {
+    .grid .col {
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 569px) {
+    .grid .col {
+        width: 50%;
+    }
+}
+

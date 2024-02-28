@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <title>Baltimore</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            background: rgb(128, 119, 0);
+            margin-left: center;
+            margin-right: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        p {
+            color: rgb(0, 0, 0);
+        }
+
+        #titulo-1 {
+            font-family: sans-serif;
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-bottom: 15px;
+            padding-right: 15px;
+        }
+
+        #ravens {
+            background: purple;
+            color: black;
+            padding: 15px;
+        }
+
+        #orioles {
+            background: orangered;
+            color: black;
+            padding: 15px;
+        }
+
+        #terps {
+            background: red;
+            color: black;
+            padding: 15px;
+        }
+
+        a.text:link {
+            color: #000000;
+        }
+
+        a.text:visited {
+            color: #000000;
+        }
+
+        a.text:hover {
+            color: #1f0074;
+        }
+
+        .bold {
+            color: rgb(233, 10, 103);
+        }
+
+        .lamar-photo {
+            width: 200px;
+        }
+
+        .section-one,
+        .section-two {
+            box-sizing: border-box;
+        }
+
+        .section-one {
+            width: 200px;
+            height: 150px;
+            background-color: deeppink;
+            background-position: center center;
+            background-size: cover;
+            background-image: url(https://www.patriotwood.com/cdn/shop/products/Ravens1.JPG?v=1538356410);
+            border: 5px solid black;
+            padding: 15px;
+            color: #fff;
+            margin: 20px;
+        }
+
+        .section-two {
+            background: deepskyblue;
+            width: 200px;
+            height: 150px;
+            border-width: 10px;
+            border-style: solid;
+            border-bottom-color: blue;
+            border-top-color: red;
+            border-left-color: yellow;
+            border-right-color: green;
+            padding: 15px;
+            color: #fff;
+            margin: 20px;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+            text-transform: uppercase;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .baltimoreh {
+            background-color: rgb(128, 119, 0)
+        }
+        
+        .baltimoreh:hover {
+            background: rgb(94, 87, 0);
+        }
+
+        .ravensh {
+            background-color: purple
+        }
+        
+        .ravensh:hover {
+            background: rgb(77, 0, 77)
+        }
+
+        .oriolesh {
+            background-color:orangered
+        }
+        
+        .oriolesh:hover {
+            background: rgb(187, 50, 0)
+        }
+
+        .terpsh {
+            background-color: red
+        }
+        
+        .terpsh:hover {
+            background: rgb(165, 1, 1)
+        }
+
+        table td, table th {
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: left;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table caption {
+            caption-side: bottom;
+            font-size: 14px;
+            font-style: italic;
+            text-align: right;
+            margin: 5px 0;
+        }
+
+
+        /* # antes de id
+           . antes de class  */
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet</p>
+
+    <table>
+        <caption>Uma descrição para tabela</caption>
+        <thead>
+            <tr>
+                <th>Titulo 1</th>
+                <th>Titulo 2</th>
+                <th>Titulo 3</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Corpo 1</td>
+                <td>Corpo 2</td>
+                <td>Corpo 3</td>
+            </tr>
+            <tr>
+                <td>Corpo 1</td>
+                <td>Corpo 2</td>
+                <td>Corpo 3</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Corpo 1</td>
+                <td>Corpo 2</td>
+                <td>Corpo 3</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h1 id="titulo-1">
+        <!--id e class são identificadores, sendo id > class, o vscode priorizará o id-->
+        <a href="https://www.baltimorecity.gov/" class="text" target="_blank">Baltimore City Sports Teams</a>
+    </h1>
+    <nav>
+        <ul>
+            <li><a class="baltimoreh" href="https://www.baltimorecity.gov/" target="_blank">baltimore</a></li>
+            <li><a class="ravensh" href="https://www.baltimoreravens.com/" target="_blank">ravens</a></li>
+            <li><a class="oriolesh" href="https://www.mlb.com/orioles" target="_blank">orioles</a></li>
+            <li><a class="terpsh" href="https://umterps.com/" target="_blank">Terrapins</a></li>
+        </ul>
+    </nav>
+    <h2 id="ravens">
+        <a href="https://www.baltimoreravens.com/" class="text" target="_blank">Baltimore Ravens</a>
+    </h2>
+    <h2 id="orioles">
+        <a href="https://www.mlb.com/orioles" class="text" target="_blank">Baltimore Orioles</a>
+    </h2>
+    <h2 id="terps">
+        <a href="https://umterps.com/" class="text" target="_blank">Maryland Terrapins</a>
+    </h2>
+
+    <!-- h1 > h6 importancia na semantica -->
+    <p>
+        <b class="bold">Lorem</b> <strong>ipsum</strong> <i>dolor</i> <em>sit</em> <del>amet</del>
+        <s>consectetur</s> <ins>adipisicing</ins> <u>elit.</u> Possimus aliquam obcaecati tempore cupiditate
+        ullam velit adipisci soluta, sit voluptate.<br>
+        Quibusdam voluptatum praesentium consectetur, repudiandae reprehenderit
+        itaque minima quasi quisquam laboriosam?
+    </p>
+    <!-- as tags: b, i, s, u são tags "fisicas", 
+    já as tags: strong, em, del, ins são tags "semânticas"
+    <br> = quebra de linha -->
+
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+
+    <ol type="A">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+
+    <dl>
+        <dt>Coffee</dt>
+        <dd>black hot drink</dd>
+    </dl>
+
+    <hr>
+    <p><a href="https://github.com/danilodscosta" target="_blank">GitHub</a>
+
+        <a href="https://www.espn.com.br/nfl/jogador/_/id/3916387/lamar-jackson" target="_blank">
+            <img class="lamar-photo"
+                src="https://s2.glbimg.com/Ic0P2IRxEOcNXZfRlZgY5ee0my0=/0x0:1024x683/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2020/l/h/gBwkcLS4GNRl9JhqhbvA/gettyimages-1193646827.jpg"
+                alt="Lamar Jackson"></a>
+    </p>
+
+    <blockquote>QB1.</blockquote>
+
+    <section class="section-one">baltimore ranves shield</section>
+    <section class="section-two">2</section>
+    <hr>
+    <div>Eu sou um bloco</div>
+    <footer>teste</footer>
+</body>
+
+</html>

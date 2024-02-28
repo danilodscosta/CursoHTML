@@ -1,0 +1,78 @@
+/*
+ID Classes, atributos e pseudo-classes  Elementos e pseudo-elementos
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 150px 1fr 50px;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 
+        'header header'
+        'nav main'
+        'footer footer';
+}
+
+.grid div:nth-child(1) {
+    grid-area: header;
+    background: tomato;
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid div:nth-child(2) {
+    grid-area: nav;
+    background: plum;
+}
+
+.grid div:nth-child(3) {
+    grid-area: main;
+    background: darkorchid;
+}
+
+.grid div:nth-child(4) {
+    grid-area: footer;
+    background: lightgreen;
+}
+
+
+@media all and (max-width: 568px) {
+    .grid .col {
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 569px) and (max-width: 768px) {
+    .grid .col {
+        width: 50%;
+    }
+}
+
+@media all and (min-width: 769px) and (max-width: 1200px) {
+    .grid .col {
+        width: 33.33%;
+    }
+}
+
+@media all and (min-width: 1201px) and (max-width: 2400px) {
+    .grid .col {
+        width: 25%;
+    }
+}
+

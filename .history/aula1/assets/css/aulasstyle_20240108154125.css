@@ -1,0 +1,8 @@
+/*
+ID Classes, atributos e pseudo-classes  Elementos e pseudo-elementos
+*/
+
+.texto {
+    display: block;
+    background: red;
+}

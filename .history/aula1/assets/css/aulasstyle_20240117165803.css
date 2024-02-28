@@ -1,0 +1,19 @@
+/*
+ID Classes, atributos e pseudo-classes  Elementos e pseudo-elementos
+*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.pai {}
+
+.col {
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 0, 0, 1);
+    margin: 10px;
+    position: static;
+}
+

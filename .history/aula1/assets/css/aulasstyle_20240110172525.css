@@ -1,0 +1,10 @@
+/*
+ID Classes, atributos e pseudo-classes  Elementos e pseudo-elementos
+*/
+
+.texto {
+    background: red;
+    width: 200px;
+    height: 200px;
+    overflow: auto;
+}
